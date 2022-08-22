@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/estilos/style.css">
+    <link rel="stylesheet" href="assets/estilos/animate.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Série Fanáticos</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo_cass.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias"><i class="fa-solid fa-newspaper"></i>Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews"><i class="fa-solid fa-star"></i>Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top10"><i class="fa-solid fa-ranking-star"></i>Top10</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-tv"></i>Séries
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="netflix"><a class="dropdown-item" href="#">Netflix</a></li>
+                                <li class="amazon"><a class="dropdown-item" href="#">Amazon Prime</a></li>
+                                <li class="hbo"><a class="dropdown-item" href="#">HBO Max</a></li>
+                                <li class="disney"><a class="dropdown-item" href="#">Disney+</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Outras</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+
+        <!-- Section Banner -->
+
+        <section class="banner">
+
+            <!-- Banner Desktop -->
+            <div id="carouselBannerDesktop" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselBannerDesktop" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselBannerDesktop" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselBannerDesktop" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                        <a href="">
+                            <img src="assets/img/bannerDesktop1.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h3>Nova série spin-off do universo de Game of Thrones estreia em agosto.</h5>
+                                    <p><i class="bi bi-pencil-square"></i> Eduardo Cassano - 15/08/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="./assets/img/bannerDesktop2.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h3>Stranger Things: criadores dizem que 5ª Temporada terá menos personagens novos</h5>
+                                    <p><i class="bi bi-pencil-square"></i> Vinícius Ramos - 14/08/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="assets/img/bannerDesktop3.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h3>The Boys: criador confirma que produção da 4ª temporada começa em breve</h5>
+                                    <p><i class="bi bi-pencil-square"></i> Henrique Batagini - 13/08/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerDesktop"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerDesktop"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <!-- Banner Mobile -->
+            <div id="carouselBannerMobile" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselBannerMobile" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselBannerMobile" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselBannerMobile" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                        <a href="">
+                            <img src="assets/img/bannerMobile1.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h3>Nova série spin-off do universo de Game of Thrones estreia em agosto.</h5>
+                                    <p><i class="bi bi-pencil-square"></i> Eduardo Cassano - 15/08/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="assets/img/bannerMobile2.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h3>Stranger Things: criadores dizem que 5ª Temporada terá menos personagens novos</h5>
+                                    <p><i class="bi bi-pencil-square"></i> Vinícius Ramos - 14/08/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="assets/img/bannerMobile3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h3>The Boys: criador confirma que produção da 4ª temporada começa em breve</h5>
+                                    <p><i class="bi bi-pencil-square"></i> Henrique Batagini - 13/08/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerMobile"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerMobile"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Section Notícias -->
+
+        <section id="noticias" class="noticias container">
+            <h3>Notícias</h3>
+            <div class="cards row">
+                <div class="card">
+                    <img src="assets/img/bannerDesktop1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nova série spin-off de Game of Thrones estreia em...</h5>
+                        <p class="card-text">Os fãs de Game of Thrones já podem se preparar para intrigas
+                            políticas, dragões e guerras: o tão aguardado spin-off de...</p>
+                        <a href="#" class="btn">Leia mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/bannerDesktop2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Stranger Things: 5ª temporada terá menos personagens</h5>
+                        <p class="card-text">Se tem uma coisa que os fãs concordam, é que a série Stranger Things tem um
+                            elenco bem grande. Entre as crianças de Haw...</p>
+                        <a href="#" class="btn">Leia mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/bannerDesktop3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Boys: produção da 4ª temporada começa em breve</h5>
+                        <p class="card-text">Eric Kripke, criador de The Boys, divulgou uma foto indicando que as
+                            gravações da quarta temporada começam em breve, de...</p>
+                        <a href="#" class="btn">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section Reviews -->
+
+        <section id="reviews" class="reviews container">
+            <h3>Reviews</h3>
+
+            <!-- Carousel Desktop -->
+
+            <div id="carouselReviewsDesktop" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselReviewsDesktop" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselReviewsDesktop" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselReviewsDesktop" data-bs-slide-to="2"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <div class="box">
+                            <div class="card">
+                                <img src="assets/img/review1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rick and Morty: 5ª temporada</h5>
+                                    <p class="card-text"><i style="padding-right: 0.5%;"
+                                            class="fa-solid fa-quote-left"></i>Final da quinta temporada de Rick and
+                                        Morty é
+                                        redenção após um quarto ano morno.
+                                        A quinta temporada de Rick and Morty chegou ao final no último domingo...<i
+                                            style="padding-left: 0.5%;" class="fa-solid fa-quote-right"></i></p>
+                                    <h6><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </h6>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rickandmortyModal"
+                                        class="btn">Leia
+                                        mais</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="assets/img/review12.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Sinner: 4ª temporada</h5>
+                                    <p class="card-text"><i style="padding-right: 0.5%;"
+                                            class="fa-solid fa-quote-left"></i>Depois de uma fraca terceira temporada
+                                        com um antagonista raso, The Sinner volta à sua boa forma com uma trama mais
+                                        instigante e personagens interessan...<i style="padding-left: 0.5%;"
+                                            class="fa-solid fa-quote-right"></i></p>
+                                    <h6><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </h6>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div class="card">
+                                <img src="assets/img/review2.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Walking Dead: 11ª temporada</h5>
+                                    <p class="card-text"><i style="padding-right: 0.5%;"
+                                            class="fa-solid fa-quote-left"></i>The Walking Dead volta para a sua décima
+                                        primeira e última temporada com o pé direito. Depois de um ano anterior
+                                        inteiramente desorganizado, a narrativ...<i style="padding-left: 0.5%;"
+                                            class="fa-solid fa-quote-right"></i></p>
+                                    <h6><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </h6>
+                                    <a href="#" class="btn">Leia mais</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="assets/img/review22.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ms. Marvel: 1ª temporada</h5>
+                                    <p class="card-text"><i style="padding-right: 0.5%;"
+                                            class="fa-solid fa-quote-left"></i>=Ainda que repletas de boas intenções e,
+                                        em alguns casos, com olhares inéditos, gentis e intrigantes a velhos conhecidos,
+                                        a Casa das Ideias falhou ao se...<i style="padding-left: 0.5%;"
+                                            class="fa-solid fa-quote-right"></i></p>
+                                    <h6><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </h6>
+                                    <a href="#" class="btn">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div class="card">
+                                <img src="assets/img/review3.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Legado de Júpiter: 1ª temporada</h5>
+                                    <p class="card-text"><i style="padding-right: 0.5%;"
+                                            class="fa-solid fa-quote-left"></i>O Legado de Júpiter entrega
+                                        entretenimento esquecível e sem dinamismo das HQs.Presa em trama inchada e
+                                        cansativa, primeira temporada da adaptação do qu...<i
+                                            style="padding-left: 0.5%;" class="fa-solid fa-quote-right"></i></p>
+                                    <h6><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </h6>
+                                    <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#jupiterModal">Leia
+                                        mais</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="assets/img/review32.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cavaleiro da Lua: 1ª temporada</h5>
+                                    <p class="card-text"><i style="padding-right: 0.5%;"
+                                            class="fa-solid fa-quote-left"></i>Contando com 6 episódios e com a sempre
+                                        digna atuação de Oscar Isaac, a série do avatar de Khonshu consegue explorar
+                                        nuances muito interessantes da psi...<i style="padding-left: 0.5%;"
+                                            class="fa-solid fa-quote-right"></i></p>
+                                    <h6><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </h6>
+                                    <a href="#" class="btn">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviewsDesktop"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselReviewsDesktop"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <!-- Carousel Mobile -->
+
+            <div id="carouselReviewsMobile" class="carousel carousel-dark slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselReviewsMobile" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselReviewsMobile" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselReviewsMobile" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselReviewsMobile" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselReviewsMobile" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselReviewsMobile" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <div class="card">
+                            <img src="assets/img/review1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rick and Morty: 5ª temporada</h5>
+                                <p class="card-text"><i style="padding-right: 0.5%;"
+                                        class="fa-solid fa-quote-left"></i>Final da quinta temporada de Rick and
+                                    Morty é
+                                    redenção após um quarto ano morno.
+                                    A quinta temporada de Rick and Morty chegou ao final no último domingo...<i
+                                        style="padding-left: 0.5%;" class="fa-solid fa-quote-right"></i></p>
+                                <h6><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </h6>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#rickandmortyModal" class="btn">Leia
+                                    mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="assets/img/review2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Walking Dead: 11ª temporada</h5>
+                                <p class="card-text"><i style="padding-right: 0.5%;"
+                                        class="fa-solid fa-quote-left"></i>The Walking Dead volta para a sua décima
+                                    primeira e última temporada com o pé direito.
+                                    Depois de um ano anterior inteiramente desorganizado, a narrativa...<i
+                                        style="padding-left: 0.5%;" class="fa-solid fa-quote-right"></i></p>
+                                <h6><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </h6>
+                                <a href="#" class="btn">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="assets/img/review3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Legado de Júpiter: 1ª temporada</h5>
+                                <p class="card-text"><i style="padding-right: 0.5%;"
+                                        class="fa-solid fa-quote-left"></i>O Legado de Júpiter entrega
+                                    entretenimento
+                                    esquecível e sem dinamismo das HQs.Presa
+                                    em trama inchada e cansativa, primeira temporada da adaptação...<i
+                                        style="padding-left: 0.5%;" class="fa-solid fa-quote-right"></i></p>
+                                <h6><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </h6>
+                                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#jupiterModal">Leia
+                                    mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="assets/img/review12.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Sinner: 4ª temporada</h5>
+                                <p class="card-text"><i style="padding-right: 0.5%;"
+                                        class="fa-solid fa-quote-left"></i>Depois de uma fraca terceira temporada
+                                    com um antagonista raso, The Sinner volta à sua boa forma com uma trama mais
+                                    instigante e personagens mais...<i style="padding-left: 0.5%;"
+                                        class="fa-solid fa-quote-right"></i></p>
+                                <h6><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </h6>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="assets/img/review22.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ms. Marvel: 1ª temporada</h5>
+                                <p class="card-text"><i style="padding-right: 0.5%;"
+                                        class="fa-solid fa-quote-left"></i>Ainda que repletas de boas intenções e,
+                                    em alguns casos, com olhares inéditos, gentis e intrigantes a velhos conhecidos,
+                                    a Casa das Ideias falhou ao se esquecer...<i style="padding-left: 0.5%;"
+                                        class="fa-solid fa-quote-right"></i></p>
+                                <h6><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </h6>
+                                <a href="#" class="btn">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="assets/img/review32.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cavaleiro da Lua: 1ª temporada</h5>
+                                <p class="card-text"><i style="padding-right: 0.5%;"
+                                        class="fa-solid fa-quote-left"></i>Contando com 6 episódios e com a sempre
+                                    digna atuação de Oscar Isaac, a série do avatar de Khonshu consegue explorar
+                                    nuances muito interessantes...<i style="padding-left: 0.5%;"
+                                        class="fa-solid fa-quote-right"></i></p>
+                                <h6><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </h6>
+                                <a href="#" class="btn">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviewsMobile"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselReviewsMobile"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Section Top10 -->
+
+        <section id="top10" class="top10 container">
+            <h3 id="titulo">Top10</h3>
+            <div class="conatainer row">
+                <div class="principal col-8">
+                    <a href="">
+                        <h3>Top 10 Séries para maratonar em 2022</h3>
+                    </a>
+                </div>
+                <div class="secundario col-4">
+                    <span>
+                        <a href="">
+                            <h4>Top10 séries de comédia</h4>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <h4>Top10 piores séries de 2022</h4>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <h4>Top10 séries da década</h4>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer1 -->
+
+    <footer class="footer1 container-fluid">
+        <div class="container">
+            <div class="logo ">
+                <img src="assets/img/logo_cass.png" alt="">
+            </div>
+            <div class="sobre ">
+                <h3>Sobre Nós</h3>
+                <p>Fundado em 2022, o Série Fanáticos é um dos maiores
+                    blogs independentes sobre séries de TV do Brasil.
+                    Feito de fãs para fãs, o SR conta com dezenas de
+                    colaboradores profissionais,que compartilham suas
+                    opiniões sobre seus programas favoritos em forma de
+                    reviews, colunas e podcasts.</p>
+            </div>
+            <div class="redes-sociais ">
+                <h3>Siga-Nos</h3>
+                <div>
+                    <span><a href="https://pt-br.facebook.com/" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a></span>
+                    <span><a href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href="https://www.linkedin.com/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span><a href="https://www.tiktok.com/" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer2 -->
+
+    <footer class="footer2">
+        <div class="container">
+            <div>
+                <p>© Série Maníacos - O Viciante Mundo das Séries e Seriados</p>
+            </div>
+            <div>
+                <a href="">Blog</a>
+                <a href="">Anuncie</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modais -->
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="rickandmortyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Rick and Morty: 5ª temporada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="modal-banner">
+                        <img src="assets/img/banner1-modal1.jpeg" alt="">
+                        <div class="tag">
+                            <div class="tag-serie">
+                                <p>Séries de TV</p>
+                            </div>
+                            <div class="tag-critica">
+                                <p>Crítica</p>
+                            </div>
+                        </div>
+                    </section>
+                    <main>
+                        <h1>Final da quinta temporada de Rick and Morty é redenção após um quarto ano morno</h1>
+                        <h3>Família Smith ganha mais protagonismo ao lado da dupla</h3>
+                        <div class="info">
+                            <div class="info-by">Eduardo Cassano</div>
+                            <div class="info-date">18.08.2022, às 14h27</div>
+                            <div class="info-update">Atualizada em 23.12.2022, às 10h22</div>
+                        </div>
+                        <div class="modal-redes">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                        <article>
+                            <p>A quinta temporada de Rick and Morty chegou ao final no último domingo (6), após apostar
+                                em episódios ainda mais emotivos e discutir com mais profundidade a relação entre o
+                                homem mais inteligente do universo e sua família.</p>
+                            <p>Após uma quarta temporada considerada instável e mal recebida por parte dos fãs, Rick e
+                                Morty voltou menos focado nas aventuras em dupla e com mais espaço para experiências
+                                coletivas da família - um dos poucos pontos fortes que a produção mantém da temporada
+                                anterior. Já no primeiro episódio, “Mort Dinner Rick Andre”, temos uma Summer guerreira
+                                subaquática, um Morty quase independente e o casal Beth e Jerry mais sexualmente
+                                liberais. Esses personagens, que até a terceira temporada só faziam volume na série,
+                                estão ganhando cada vez mais espaço, em uma ramificação que abriu as portas para novas
+                                aventuras e possibilidades dentro da série.</p>
+                            <div class="modal-article-img">
+                                <img src="assets/img/banner2-modal1.jpeg" alt="">
+                                <p>Adult Swim/Divulgação</p>
+                            </div>
+                            <p>Summer tem mais participação que Morty em alguns episódios e também se aventura em mais
+                                “rolês com o vovô”, e até com o irmão caçula. A personagem consegue contribuir muito
+                                graças à sua mentalidade, que é uma mescla de adolescente do colegial e mulher madura
+                                que já lutou em guerras multiversais. Essa característica fica muito expressiva se
+                                comparada a personalidade atrapalhada e insegura de Morty e promove um ritmo diferente
+                                na temporada, como nos episódios três e sete.</p>
+                            <p>Entretanto, a principal marca dessa mudança de rota da temporada são os vários rachas na
+                                relação entre Morty e Rick. Desde o primeiro episódio, os dois quase não fazem missões
+                                juntos, e quando iniciam uma aventura, algum outro elemento os separa. Essa fragilidade
+                                na relação abusiva entre avô e neto faz a roda da temporada girar até o alucinante
+                                final, em que Rick reconhece que ficar perto de Morty é prejudicial para ambos. As
+                                autocríticas de Rick aparecem com frequência na série, indicando uma possível mudança de
+                                ares para os próximos anos. O cientista transformado em um ser altamente niilista pelo
+                                próprio conhecimento agora parece se preocupar com a atual versão de sua família.</p>
+                            <div class="modal-article-img">
+                                <img src="assets/img/banner3-modal1.jpeg" alt="">
+                                <p>Adult Swim/Divulgação</p>
+                            </div>
+                            <p>Mesmo com as mudanças na narrativa, a quinta temporada mantém o estilo da série e conta
+                                com momentos desconfortáveis, como o bebê incestuoso de Summer e Morty, e os momentos de
+                                puro arrependimento de Rick, que aparecem sempre como fantasmas para atormentar o
+                                cientista que gosta de fingir que não se importa com nada.</p>
+                            <p>Após uma quarta temporada mediana, a série entra no ano cinco tateando um novo formato.
+                                Nos primeiros cinco episódios, as linhas ainda não se encaixam tão bem e a fórmula do
+                                ano anterior parece estar se repetindo. Porém, o desgaste entre os protagonistas serve
+                                como trampolim para levar os episódios finais ao topo das expectativas, mostrando que a
+                                trama clássica pode estar voltando - o que Rick chama de “aventuras simples” no décimo
+                                episódio.</p>
+                            <p>Ao resolver seus problemas de uma maneira nada saudável, os personagens reiniciam a trama
+                                de uma maneira nostálgica. A dupla é levada de volta para a cidadela dos Ricks, onde as
+                                batalhas mais alucinantes foram travadas entre as milhares de versões do vovô Sanchez.
+                                Assim como o finale da temporada quatro ditou o ritmo do quinto ano da série, o episódio
+                                “Rickmurai Jack” nos sugere o caminho que Rick e Morty vão seguir agora. O retorno do
+                                possível maior vilão da trama aumenta muito as expectativas para o futuro, e o final
+                                ajuda a série a se redimir após uma quarta temporada morna e um início de quinta que não
+                                surpreendeu.</p>
+                            <div class="stars">
+                                <h4>Nota do Crítico</h4>
+                                <span><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i></span>
+                                <p>Excelente</p>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="jupiterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Legado de Júpiter: 1ª temporada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="modal-banner">
+                        <img src="assets/img/banner1-modal2.jpeg" alt="">
+                        <div class="tag">
+                            <div class="tag-serie">
+                                <p>Séries de TV</p>
+                            </div>
+                            <div class="tag-critica">
+                                <p>Crítica</p>
+                            </div>
+                        </div>
+                    </section>
+                    <main>
+                        <h1>O Legado de Júpiter entrega entretenimento esquecível e sem dinamismo das HQs</h1>
+                        <h3>Presa em trama inchada e cansativa, primeira temporada da adaptação do quadrinho de Mark
+                            Millar esquece de se aprofundar no debate geracional que propõe</h3>
+                        <div class="info">
+                            <div class="info-by">Vinícius Ramos</div>
+                            <div class="info-date">08.07.2022, às 12h45</div>
+                            <div class="info-update">Atualizada em 03.08.2022, às 09h10</div>
+                        </div>
+                        <div class="modal-redes">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                        <article>
+                            <p>Lançada originalmente em 2013, a HQ O Legado de Júpiter, de Mark Millar e Frank Quitely,
+                                retomava uma pertinente discussão geracional iniciada em 1996 por Mark Waid e Alex Ross
+                                em Reino do Amanhã. Assim como sua predecessora, a revista do Millarworld questionava a
+                                mudança das histórias de super-heróis, antes baseadas em inspiração e esperança e agora
+                                ditadas por tendências apelativas de quadros hiperviolentos e sexualizados. Adotando
+                                justamente a linguagem que criticava para provar sua tese, Millar entregou com o título
+                                um contraponto ao movimento que ajudou a criar com Kick-Ass e Os Supremos, provando que
+                                os grandes heróis são indissociáveis do simbolismo iluminado que os cercam.
+                                Infelizmente, a versão da Netflix de O Legado de Júpiter apenas ensaia recuperar esse
+                                debate, com resultados decepcionantes.</p>
+                            <p>Por mais que traga elementos-chave o bastante para ser classificada como uma adaptação, a
+                                série funciona, na verdade, mais como uma introdução a Legado de Júpiter e seu prelúdio,
+                                O Círculo de Júpiter (que contou com artes de Wilfredo Torres e Davide Gianfelice).
+                                Sendo assim, o espectador é apresentado a pequenos indícios de atrito entre os membros
+                                originais da União da Justiça, super-heróis que adquiriram seus poderes ao explorar uma
+                                misteriosa ilha, e seus descendentes, que nasceram poderosos e cresceram exibindo seus
+                                dons para a humanidade. Enquanto os livros de Millar expunham de cara as maneiras
+                                opostas como essas diferentes gerações lutavam contra forças que ameaçavam a humanidade,
+                                a produção da Netflix sacrifica toda chance de dinamismo ao citar essas diferenças em
+                                linhas de diálogo rasas e passageiras. A falta de profundidade e excesso de antecipação
+                                por um conflito que nunca acontece torna frustrante a experiência de assistir o primeiro
+                                ano de O Legado de Júpiter.</p>
+                            <div class="modal-article-img">
+                                <img src="assets/img/banner2-modal2.webp" alt="">
+                                <p>Netflix/Divulgação</p>
+                            </div>
+                            <p>As poucas cenas minimamente empolgantes da temporada também acabam se tornando maçantes,
+                                não só pelo exagero de câmeras lentas, mas pelos efeitos visuais decepcionantes, que
+                                parecem pertencer a telefilmes dos anos 1990. Não ajuda também o fato de que toda dose
+                                de adrenalina proporcionada pela série é seguida quase imediatamente de um sermão
+                                monótono proferido pelo Utópico (Josh Duhamel), o Superman do mundo de O Legado de
+                                Júpiter. Repetitiva, a fórmula dos episódios cria uma barriga impossível de ser ignorada
+                                na primeira temporada e faz com que a trama praticamente não saia do lugar mesmo depois
+                                de quase oito horas.</p>
+                            <p>Embora não tenha um texto bom com o qual trabalhar, o elenco se esforça o bastante para
+                                entregar o entretenimento prometido pelos trailers. Enquanto é inegável que Duhamel,
+                                Leslie Bibb e Ben Daniels transmitem a grandiosidade característica dos heróis da Era de
+                                Ouro dos quadrinhos, Elena Kampouris, Ian Quinlan, Anna Akana e Tenika Davis também
+                                entregam performances convincentes, apesar do roteiro embolado. Dentro do elenco, talvez
+                                Andrew Horton seja o único realmente prejudicado pelo script, já que ele tem pouco mais
+                                a fazer do que olhar para o horizonte com um semblante triste.</p>
+                            <div class="modal-article-img">
+                                <img src="assets/img/banner3-modal2.jpeg" alt="">
+                                <p>Netflix/Divulgação</p>
+                            </div>
+                            <p>O uso moderado do gore também é elogiável. Diferentemente da chuva de sangue presente em
+                                The Boys ou Kick-Ass, a violência de O Legado de Júpiter faz parte da narrativa e serve
+                                de agente catalisador para ações dos personagens e não como um simples escape para
+                                qualquer sentimento sanguinolento que o espectador tenha guardado.</p>
+                            <p>Por mais que se proponha a recriar a discussão dos gibis, a primeira temporada de O
+                                Legado de Júpiter nunca traz a discussão à tona por tempo o bastante para que ela tome
+                                corpo. No final, os primeiros oito episódios da série servem mais como uma introdução
+                                vazia aos trabalhos de Millar do que como uma história própria. Com potencial para ser a
+                                grande propriedade de heróis da Netflix, a produção entrega apenas tédio para novos
+                                espectadores e decepção para fãs das HQs originais.</p>
+                            <div class="stars">
+                                <h4>Nota do Crítico</h4>
+                                <span><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i></span>
+                                <p>Regular</p>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
