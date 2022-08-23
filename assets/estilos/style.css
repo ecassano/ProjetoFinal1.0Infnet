@@ -802,7 +802,7 @@ a{
     }
 
     .noticias .card img{
-        min-height: 240px;
+        min-height: 200px;
     }
 
     /*Reviews 767*/
@@ -979,6 +979,11 @@ a{
 }
 
 @media screen and (min-width: 992px){
+
+    .noticias .card img{
+        min-height: 240px;
+    }
+
     .info{
         display: flex;
     }
