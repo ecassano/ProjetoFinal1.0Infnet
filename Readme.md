@@ -15,4 +15,3 @@ Ciao, questo è il mio progetto finale della prima parte del Bootcamp Full Stack
 
 Osservazioni sul progetto:
 1 - Ci sono modali di esempio pronti nella sessione de "reviews" pronti delle seguenti Serie TV: Rick and Morty e Jupiter's Legacy.
-.
